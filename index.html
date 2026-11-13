@@ -628,6 +628,32 @@ var QUESTIONS=[
 {p:4,q:"When qualitative and quantitative findings contradict each other in an MMR study, researchers face the challenge of:",o:["Automatic rejection by ethics boards","Divergent or conflicting results, requiring interpretive frameworks to address discrepancies rather than overemphasizing one set of results","Having to discard all qualitative data immediately","Forced conversion of qualitative text into numeric codes"],a:1}
 ];
 
+/* ---------- Rebalance correct-answer positions ----------
+   Guarantees a roughly even spread across A, B, C, D
+   instead of the source key's heavy bias toward option B. */
+(function rebalanceCorrectPositions(){
+  var targets = QUESTIONS.map(function(_, i){ return i % 4; });
+
+  for (var i = targets.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = targets[i];
+    targets[i] = targets[j];
+    targets[j] = t;
+  }
+
+  QUESTIONS.forEach(function(q, i){
+    var target = targets[i];
+    if (q.a === target) return;
+
+    var correct = q.o[q.a];
+    var rest = q.o.filter(function(_, idx){ return idx !== q.a; });
+
+    rest.splice(target, 0, correct);
+    q.o = rest;
+    q.a = target;
+  });
+})();
+
 /* ---------- helpers ---------- */
 var $=function(id){return document.getElementById(id)};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
