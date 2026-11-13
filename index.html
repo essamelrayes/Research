@@ -3,14 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Business Ethics & CSR — Study Guide</title>
+<title>Research Methodology — Study Guide & Quiz</title>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f2f5f4;--card:#fff;--ink:#16241f;--mute:#56675f;--line:#d5dfdb;--acc:#14705a;--acc2:#0d4a3b;--tint:#e3f0ec;--gold:#a9741b;--goldbg:#fbf3e1;--bad:#a33a2c;--badbg:#fbeae7;--onacc:#fff;
---serif:'Newsreader',Georgia,serif;--sans:'Public Sans','Segoe UI',Arial,sans-serif;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1916;--card:#16241f;--ink:#e6efeb;--mute:#9fb3aa;--line:#2b3e37;--acc:#4cc2a1;--acc2:#8fe0c7;--tint:#1b3029;--gold:#e0b25c;--goldbg:#2a2415;--bad:#ef8f80;--badbg:#321c18;--onacc:#0f1916}}
-:root[data-theme="dark"]{--bg:#0f1916;--card:#16241f;--ink:#e6efeb;--mute:#9fb3aa;--line:#2b3e37;--acc:#4cc2a1;--acc2:#8fe0c7;--tint:#1b3029;--gold:#e0b25c;--goldbg:#2a2415;--bad:#ef8f80;--badbg:#321c18;--onacc:#0f1916}
+:root{
+  --bg:#f4f7f9;--card:#fff;--ink:#1a2332;--mute:#5a6b7a;--line:#dde5ec;
+  --acc:#1f4e5f;--acc2:#14333f;--tint:#e8f0f3;
+  --gold:#a9741b;--goldbg:#fdf6e3;--bad:#b42318;--badbg:#fdecec;--onacc:#fff;
+  --serif:'Newsreader',Georgia,serif;--sans:'Public Sans','Segoe UI',Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1922;--card:#1a2632;--ink:#e6edf3;--mute:#9aaab8;--line:#2a3a48;
+    --acc:#6cb8d9;--acc2:#a8d8ec;--tint:#16232e;
+    --gold:#e0b25c;--goldbg:#2a2415;--bad:#ef8f80;--badbg:#321c18;--onacc:#0f1922
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1922;--card:#1a2632;--ink:#e6edf3;--mute:#9aaab8;--line:#2a3a48;
+  --acc:#6cb8d9;--acc2:#a8d8ec;--tint:#16232e;
+  --gold:#e0b25c;--goldbg:#2a2415;--bad:#ef8f80;--badbg:#321c18;--onacc:#0f1922
+}
 html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-tap-highlight-color:transparent}
@@ -24,7 +38,7 @@ nav a:hover{background:var(--tint)}
 nav a.on{background:var(--acc);color:var(--onacc)}
 nav button{margin-left:auto;flex:none;border:1px solid var(--line);background:none;color:var(--ink);border-radius:99px;padding:5px 12px;font:inherit;font-size:.85rem;cursor:pointer}
 body.quiz-mode nav#nav{display:none}
-header{background:#0d4a3b;color:#fff;padding:64px 20px 56px}
+header{background:linear-gradient(135deg,#14333f 0%,#1f4e5f 100%);color:#fff;padding:64px 20px 56px}
 header div,main{max-width:940px;margin:0 auto}
 header h1{font:700 clamp(2rem,5vw,3.4rem)/1.1 var(--serif);margin:0 0 14px;max-width:16ch}
 header p{margin:0;max-width:52ch;opacity:.85;font-size:1.05rem}
@@ -34,6 +48,7 @@ main{padding:10px 20px 80px}
 section{padding-top:44px}
 h2{font:700 clamp(1.6rem,3.5vw,2.2rem)/1.2 var(--serif);margin:0 0 6px;color:var(--acc2)}
 h3{font:700 1.2rem/1.3 var(--serif);margin:28px 0 10px}
+h4{font:700 1rem/1.35 var(--serif);margin:0 0 6px;color:var(--acc2)}
 .lede{color:var(--mute);margin:0 0 18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px}
 .tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}
@@ -45,26 +60,14 @@ td:first-child{font-weight:500}
 ul,ol{margin:0;padding-left:1.2em}li{margin:4px 0}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .call{border-left:5px solid var(--gold);background:var(--goldbg);padding:14px 18px;border-radius:0 8px 8px 0;margin:18px 0}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:99px;font:500 .9rem var(--sans);cursor:pointer}
-.tabs button[aria-selected=true]{background:var(--acc);color:var(--onacc);border-color:var(--acc)}
-.panel[hidden]{display:none}
-.q{font:500 1.15rem/1.4 var(--serif);color:var(--acc2);margin:0 0 4px}
-.who{color:var(--mute);font-size:.9rem;margin:0 0 12px}
 .tl{list-style:none;padding:0;margin:0;border-left:3px solid var(--acc);margin-left:8px}
 .tl li{position:relative;padding:4px 0 14px 22px;margin:0}
 .tl li:before{content:"";position:absolute;left:-9px;top:10px;width:15px;height:15px;border-radius:50%;background:var(--card);border:3px solid var(--acc)}
-.tl b{display:block;color:var(--acc2)}
-.ini{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
-.ini h3{margin:0}
-.ini .lbl{font-weight:700;color:var(--acc2)}
-.pc{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:560px){.pc{grid-template-columns:1fr}}
-.pc>div{border-radius:8px;padding:10px 14px;font-size:.93rem}
-.pro{background:var(--tint)}.con{background:var(--badbg)}
-.pc b{display:block;margin-bottom:2px}.con b{color:var(--bad)}.pro b{color:var(--acc2)}
-.tag{display:inline-block;font-size:.8rem;font-weight:700;background:var(--goldbg);color:var(--gold);border-radius:6px;padding:2px 9px}
-.bad td:first-child{color:var(--bad)}
+.tl b{display:block;color:var(--acc2);margin-bottom:2px}
+.tl p{margin:0;color:var(--mute);font-size:.93rem}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0}
+.flow span{background:var(--tint);color:var(--acc2);border-radius:8px;padding:8px 16px;font-weight:600;font-size:.9rem}
+.flow .arr{background:none;color:var(--mute);padding:0 2px;font-weight:400}
 details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:10px 0}
 summary{cursor:pointer;padding:14px 20px;font-weight:500;list-style:none}
 summary::-webkit-details-marker{display:none}
@@ -73,10 +76,8 @@ details[open] summary:before{content:"−"}
 details[open] summary{border-bottom:1px solid var(--line)}
 details div{padding:12px 20px 14px 42px}
 .tips li{margin:10px 0}
-
-/* ---------- buttons / CTA ---------- */
-.cta{display:inline-block;margin-top:24px;background:#fff;color:#0d4a3b;text-decoration:none;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:99px;border:0;cursor:pointer;font-family:var(--sans)}
-.cta:hover{background:#e3f0ec}
+.cta{display:inline-block;margin-top:24px;background:#fff;color:#14333f;text-decoration:none;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:99px;border:0;cursor:pointer;font-family:var(--sans)}
+.cta:hover{background:#e8f0f3}
 .btn{display:inline-block;border:0;background:var(--acc);color:var(--onacc);border-radius:99px;padding:9px 20px;font:600 .95rem var(--sans);cursor:pointer;text-decoration:none;transition:background .15s ease,border-color .15s ease,color .15s ease}
 .btn:hover{background:var(--acc2)}
 .btn.ghost{background:none;border:1px solid var(--line);color:var(--ink)}
@@ -84,14 +85,12 @@ details div{padding:12px 20px 14px 42px}
 .btn.ghost.active{background:var(--tint);border-color:var(--acc);color:var(--acc2)}
 .btn.sm{padding:6px 14px;font-size:.85rem}
 .btn:disabled{opacity:.4;cursor:not-allowed}
-
-/* ---------- quiz shell (separate view) ---------- */
+/* quiz shell */
 .quiz-top{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:9px 20px;flex-wrap:wrap}
 .quiz-top .title{font:700 1rem var(--serif);color:var(--acc2);margin-right:auto}
 .quiz-wrap{max-width:940px;margin:0 auto;padding:26px 20px 90px}
 .quiz-wrap>h2{margin-top:0}
-
-/* ---------- chapter picker ---------- */
+/* chapter picker */
 .chapters-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .chapters-head h3{margin:0}
 .chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px;margin:14px 0}
@@ -101,14 +100,11 @@ details div{padding:12px 20px 14px 42px}
 .chip small{color:var(--mute);margin-left:auto;font-size:.8rem}
 .opts-row{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 4px}
 .opts-row .chip{padding:8px 14px;font-size:.88rem}
-
-/* ---------- MCQ meta + progress ---------- */
+/* MCQ */
 .mcq-bar{height:8px;background:var(--tint);border-radius:99px;overflow:hidden;margin:0 0 10px}
 .mcq-bar-fill{height:100%;background:var(--acc);width:0;transition:width .25s}
 @media(prefers-reduced-motion:reduce){.mcq-bar-fill{transition:none}}
 .mcq-meta{display:flex;justify-content:space-between;gap:12px;font-size:.85rem;color:var(--mute);margin:16px 0 8px;flex-wrap:wrap}
-
-/* ---------- answer options ---------- */
 .opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:11px 14px;margin:8px 0;font:inherit;font-size:.95rem;line-height:1.5;cursor:pointer;transition:background .12s ease,border-color .12s ease}
 .opt .k{font-weight:700;color:var(--mute);flex:none}
 .opt:hover:not(:disabled){background:var(--tint)}
@@ -118,18 +114,11 @@ details div{padding:12px 20px 14px 42px}
 .opt.wrong{border-color:var(--bad);background:var(--badbg)}
 .opt.wrong .k{color:var(--bad)}
 .opt:disabled{cursor:default}
-
-/* ---------- MCQ actions ---------- */
 .mcq-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px}
 .actions-primary{display:flex;gap:10px;flex-wrap:wrap}
 .end-test{margin-left:auto}
-@media(min-width:721px){
-  #prevBtn{order:1}
-  #revealBtn{order:2}
-  #nextBtn{order:3}
-}
-
-/* ---------- results ---------- */
+@media(min-width:721px){#prevBtn{order:1}#revealBtn{order:2}#nextBtn{order:3}}
+/* results */
 .res-head{text-align:center}
 .res-pct{font:700 clamp(2.6rem,8vw,4rem)/1 var(--serif);color:var(--acc2);margin:0}
 .res-sub{color:var(--mute);margin:6px 0 18px}
@@ -137,72 +126,47 @@ details div{padding:12px 20px 14px 42px}
 .ok{color:var(--acc)}
 .no{color:var(--bad)}
 .rev-q{font-weight:500}
-
-/* review filters + hidden review panel */
 .rev-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
 .rev-empty{padding:12px 0}
-
 @media print{
   .quiz-top,.mcq-actions,.mcq-bar,.mcq-meta,.cta,.rev-filters{display:none!important}
   body.quiz-mode nav#nav{display:none!important}
   nav,.tabs,header .scale{display:none}
-  .panel[hidden]{display:block!important}
   #revList{display:block!important}
   body{background:#fff}header{background:#fff;color:#000;padding:0}
   section{break-inside:avoid-page}details{break-inside:avoid}
 }
-
-/* =====================================================
-   MOBILE ENHANCEMENTS
-   ===================================================== */
-@media (max-width: 720px){
-  /* ---------- General layout ---------- */
+@media (max-width:720px){
   body{font-size:15.5px;line-height:1.6}
   main{padding:8px 16px 72px}
   section{padding-top:36px}
   h2{font-size:clamp(1.45rem,6.5vw,1.9rem)}
   h3{font-size:1.08rem;margin:22px 0 8px}
   .lede{font-size:.94rem;margin-bottom:14px}
-
-  /* Header */
   header{padding:36px 18px 32px}
   header h1{font-size:clamp(1.85rem,8vw,2.6rem);margin-bottom:10px}
   header p{font-size:1rem}
   .scale{margin-top:18px;gap:8px}
   .scale span{font-size:.8rem;padding:4px 10px}
   .cta{margin-top:20px;display:block;width:100%;text-align:center;padding:14px 20px;font-size:.98rem;box-sizing:border-box}
-
-  /* Nav */
   nav{padding:8px 10px;gap:3px}
   nav a{font-size:.8rem;padding:7px 11px}
   nav button{font-size:.8rem;padding:6px 10px}
-
-  /* Cards / tables */
   .card{padding:15px 16px}
   .call{padding:12px 14px;border-left-width:4px}
   th,td{padding:10px 12px;font-size:.88rem}
   th{font-size:.85rem}
   .two{gap:12px}
-
-  /* Tabs / details */
-  .tabs{gap:5px}
-  .tabs button{padding:8px 12px;font-size:.85rem}
   details summary{padding:13px 16px;font-size:.95rem}
   details div{padding:10px 16px 12px 38px;font-size:.95rem}
-
-  /* Buttons globally */
   .btn{min-height:44px;padding:11px 18px;font-size:.92rem}
   .btn.sm{min-height:40px;padding:8px 14px;font-size:.83rem}
-
-  /* ---------- Quiz shell ---------- */
   .quiz-top{padding:8px 14px;gap:8px}
   .quiz-top .title{display:none}
   .quiz-top [data-theme-toggle]{margin-left:auto}
   .quiz-wrap{padding:18px 16px 72px}
   .quiz-wrap h2{font-size:clamp(1.4rem,6.5vw,1.85rem)}
   .quiz-wrap>.lede{font-size:.93rem;margin-bottom:14px}
-
-  /* Chapter picker */
   .chapters{grid-template-columns:1fr;gap:6px;margin:10px 0}
   .chip{padding:12px 14px;font-size:.9rem;min-height:48px;border-radius:10px;box-sizing:border-box}
   .chip small{font-size:.78rem}
@@ -210,86 +174,27 @@ details div{padding:12px 20px 14px 42px}
   .chapters-head h3{font-size:1.05rem;margin:0}
   .opts-row{gap:6px}
   .opts-row .chip{padding:10px 14px;font-size:.86rem;min-height:44px}
-
-  /* MCQ meta + progress */
   .mcq-meta{font-size:.82rem;margin:14px 0 6px}
   .mcq-bar{height:6px;margin-bottom:12px}
-
-  /* Question text */
   #qText{font-size:1.08rem;line-height:1.45}
-  .card .q{font-size:1.08rem;line-height:1.45}
-
-  /* Answer options */
   .opt{padding:13px 15px;margin:7px 0;font-size:.93rem;min-height:52px;gap:12px;border-radius:10px;line-height:1.5;box-sizing:border-box}
   .opt .k{font-size:.95rem;min-width:1.1em}
-
-  /* ---------- MCQ action buttons ---------- */
-  .mcq-actions{
-    flex-direction:column;
-    align-items:stretch;
-    gap:18px;
-    margin-top:22px;
-  }
-  .actions-primary{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    width:100%;
-  }
-  .actions-primary .btn{
-    width:100%;
-    min-height:52px;
-    padding:12px 8px;
-    font-size:.95rem;
-    border-radius:12px;
-    box-sizing:border-box;
-  }
-  .actions-primary #revealBtn{grid-column:1 / -1}
-
-  /* "End test" — own row, distinct look, far from Next */
-  .end-test{
-    margin-left:0;
-    width:100%;
-    min-height:48px;
-    padding:11px 16px;
-    font-size:.88rem;
-    color:var(--mute);
-    background:none;
-    border:1px dashed var(--line);
-    border-radius:12px;
-    position:relative;
-    box-sizing:border-box;
-  }
-  .end-test::before{
-    content:"";
-    position:absolute;
-    top:-10px;
-    left:22%;
-    right:22%;
-    height:1px;
-    background:var(--line);
-  }
-  .end-test:hover,.end-test:focus-visible{
-    color:var(--bad);
-    border-color:var(--bad);
-    background:var(--badbg);
-  }
-
-  /* Start-view back button */
+  .mcq-actions{flex-direction:column;align-items:stretch;gap:18px;margin-top:22px}
+  .actions-primary{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+  .actions-primary .btn{width:100%;min-height:52px;padding:12px 8px;font-size:.95rem;border-radius:12px;box-sizing:border-box}
+  .actions-primary #revealBtn{grid-column:1/-1}
+  .end-test{margin-left:0;width:100%;min-height:48px;padding:11px 16px;font-size:.88rem;color:var(--mute);background:none;border:1px dashed var(--line);border-radius:12px;position:relative;box-sizing:border-box}
+  .end-test::before{content:"";position:absolute;top:-10px;left:22%;right:22%;height:1px;background:var(--line)}
+  .end-test:hover,.end-test:focus-visible{color:var(--bad);border-color:var(--bad);background:var(--badbg)}
   #startBack{width:100%;box-sizing:border-box;min-height:48px}
-
-  /* Review filters — full-width stacked on mobile */
   .rev-filters{flex-direction:column;gap:8px}
   .rev-filters .btn{width:100%;box-sizing:border-box;text-align:center}
-
-  /* Results */
   .res-pct{font-size:clamp(2.4rem,14vw,3.4rem)}
   .res-sub{font-size:.95rem;margin-bottom:14px}
   #mcq-result .mcq-actions{flex-direction:column;align-items:stretch}
   #retryBtn,#resBack{width:100%;box-sizing:border-box}
 }
-
-@media (max-width: 420px){
+@media (max-width:420px){
   header{padding:30px 14px 26px}
   header h1{font-size:clamp(1.7rem,9vw,2.2rem)}
   main{padding:6px 12px 60px}
@@ -309,274 +214,209 @@ details div{padding:12px 20px 14px 42px}
 <div id="guide">
 
 <nav id="nav" aria-label="Sections">
-<a href="#p1">Foundations</a><a href="#p2">Theories</a><a href="#p3">Unethical behavior</a><a href="#p4">CSR</a><a href="#p5">6 initiatives</a><a href="#p6">Benefits</a><a href="#p7">Cases</a><a href="#ref">Key terms</a><a href="#quiz">MCQ quiz</a><a href="#test">Self-test</a>
+<a href="#p1">Foundations</a><a href="#p2">Kuhn Cycle</a><a href="#p3">Paradigms</a><a href="#p4">Reasoning &amp; Designs</a><a href="#p5">Mixed Methods</a><a href="#test">Self-test</a><a href="#quiz">MCQ quiz</a>
 <button type="button" data-theme-toggle aria-label="Toggle dark mode">Dark mode</button>
 </nav>
 
 <header><div>
-<h1>Business Ethics & CSR</h1>
-<p>MBA exam study guide. Seven parts, from what ethics is to how companies put social responsibility into practice, with a 100-question MCQ test.</p>
-<div class="scale"><span>Ethical theories</span><span>Unethical behavior</span><span>6 CSR initiatives</span><span>Case examples</span></div>
-<button class="cta" type="button" data-open-quiz>Take the 100-question MCQ test →</button>
+<h1>Research Methodology</h1>
+<p>From the nature of scientific knowledge to Kuhn's cycle, research paradigms, reasoning logics, qualitative designs, and mixed methods — with a 50-question MCQ test.</p>
+<div class="scale"><span>Foundations</span><span>Kuhn's cycle</span><span>Paradigms</span><span>Reasoning</span><span>Mixed methods</span></div>
+<button class="cta" type="button" data-open-quiz>Take the 50-question MCQ test →</button>
 </div></header>
 
 <main>
 
+<!-- ============ SECTION 1: FOUNDATIONS ============ -->
 <section id="p1">
-<h2>Foundations of business ethics</h2>
+<h2>Foundations of Science &amp; Research</h2>
 <p class="lede">Start here: the vocabulary everything else builds on.</p>
 
-<h3>Key definitions</h3>
-<div class="tw"><table>
-<tr><th>Term</th><th>Definition</th></tr>
-<tr><td>Morality</td><td>Norms, values and beliefs defining right and wrong for an individual or community.</td></tr>
-<tr><td>Ethics</td><td>The study of morality; systematic rules for determining right and wrong. From the Greek <i>ethos</i>, meaning custom or character.</td></tr>
-<tr><td>Business ethics</td><td>Moral principles guiding behavior in the business world.</td></tr>
-</table></div>
-
-<h3>Ethics vs. morals</h3>
-<div class="tw"><table>
-<tr><th>Ethics</th><th>Morals</th></tr>
-<tr><td>Guiding principles of conduct</td><td>Principles for judgments of right and wrong</td></tr>
-<tr><td>Influenced by profession or organization</td><td>Influenced by society, culture and religion</td></tr>
-<tr><td>Related to professional work</td><td>Not related to professional work</td></tr>
-<tr><td>Uniform compared to morals</td><td>Vary across cultures</td></tr>
-</table></div>
-
-<div class="two" style="margin-top:22px">
-<div class="card"><h3 style="margin-top:0">Why people don't act ethically</h3>
-<ol><li>Conflict between ethics and interests</li><li>Management pressure</li><li>Self-interest to achieve objectives</li><li>Intensive competition pressures</li><li>Toxic organizational culture</li><li>Absence of leading by example</li><li>No ethics training</li></ol></div>
-<div>
-<div class="card"><h3 style="margin-top:0">How to commit to ethics</h3>
-<ol><li><b>Comply with laws</b>, which are driven from ethics and morals</li><li><b>Fulfill promises</b> and agreements</li><li><b>Be transparent</b>: disclose, don't hide problems</li></ol></div>
-<div class="card" style="margin-top:16px"><h3 style="margin-top:0">Sources of ethics</h3>
-<ul><li><b>Religion:</b> moral framework, guiding principles</li><li><b>Laws:</b> protect ethical behavior</li><li><b>Culture and society:</b> norms and values</li></ul></div>
-</div></div>
-</section>
-
-<section id="p2">
-<h2>Ethical theories</h2>
-<p class="lede">Each theory asks a different question. In the exam, pick the question that fits the scenario.</p>
-
-<div class="tw"><table>
-<tr><th>Theory</th><th>Focus</th><th>Key question</th></tr>
-<tr><td>Consequentialist</td><td>Outcomes of action</td><td>What produces the best consequences?</td></tr>
-<tr><td>Utilitarianism</td><td>Greatest good for the greatest number</td><td>Will this produce the greatest happiness?</td></tr>
-<tr><td>Egoism</td><td>Self-interest</td><td>What benefits me most?</td></tr>
-<tr><td>Hedonism</td><td>Pleasure and absence of pain</td><td>What maximizes pleasure?</td></tr>
-<tr><td>Deontology</td><td>Duties and rules</td><td>What ought I to do?</td></tr>
-<tr><td>Virtue theory</td><td>Moral character</td><td>What kind of life should I live?</td></tr>
-<tr><td>Relativism</td><td>Culture and society norms</td><td>What does my culture say?</td></tr>
-</table></div>
-
-<h3>Explore each theory</h3>
-<div class="tabs" role="tablist" id="tabs"></div>
-
-<div class="panel card" data-t="Utilitarianism" hidden>
-<p class="q">Utilitarianism</p><p class="who">Bentham, Mill</p>
-<ul><li><b>Principle:</b> the right action is the greatest good for the largest number.</li><li><b>Application:</b> cost-benefit analysis, stakeholder impact.</li><li><b>Strengths:</b> common in business; considers everyone affected.</li><li><b>Weaknesses:</b> can't predict the future; ignores justice and individual rights.</li><li><b>Trolley problem:</b> sacrifice one to save many?</li></ul></div>
-
-<div class="panel card" data-t="Egoism" hidden>
-<p class="q">Egoism</p><p class="who">Self-interest is the moral principle</p>
-<ul><li>Businesses may use poor materials to maximize profit.</li><li><b>Example:</b> layoffs to protect shareholder value.</li></ul></div>
-
-<div class="panel card" data-t="Hedonism" hidden>
-<p class="q">Hedonism</p><p class="who">Pleasure is the highest good</p>
-<ul><li><b>Egotistical:</b> only your own pleasure matters.</li><li><b>Altruistic:</b> pleasure for all people.</li><li><b>Criticism:</b> ignores freedom and fairness.</li></ul></div>
-
-<div class="panel card" data-t="Deontology" hidden>
-<p class="q">Deontological theory</p><p class="who">Kant</p>
-<ul><li><b>Duty-based:</b> morality is determined by adherence to rules.</li><li><b>Non-consequentialist:</b> the act itself matters, not the outcome.</li><li>All humans are equal regardless of gender, religion or health.</li><li><b>Example:</b> an employee refuses to access a confidential file.</li></ul></div>
-
-<div class="panel card" data-t="Virtue theory" hidden>
-<p class="q">Virtue theory</p><p class="who">Aristotle</p>
-<ul><li>Focuses on <b>character</b>, not rules or consequences.</li><li><b>Virtues:</b> honesty, courage, generosity, truthfulness.</li><li>Acquired through practice and habit.</li><li><b>Goal:</b> a flourishing life, not just profit.</li></ul></div>
-
-<div class="panel card" data-t="Relativism" hidden>
-<p class="q">Relativism</p><p class="who">Ethics depends on culture, society or personal feelings</p>
-<ul><li>The same action may be right in one society and wrong in another.</li><li><b>Example:</b> child labor criticism. A relativist says it is just opinion.</li></ul></div>
-</section>
-
-<section id="p3">
-<h2>Forms of unethical behavior</h2>
-<div class="tw"><table>
-<tr><th>Type</th><th>Examples</th></tr>
-<tr><td>Hiding information</td><td>Protecting your own position, not informing management</td></tr>
-<tr><td>Misusing power</td><td>Threats, humiliation, "you can be fired"</td></tr>
-<tr><td>Misusing work time</td><td>Social media, late arrivals, personal activities</td></tr>
-<tr><td>Theft</td><td>Company resources for personal use, inventory theft</td></tr>
-<tr><td>Bullying</td><td>Aggressive behavior, harassment, verbal abuse</td></tr>
-<tr><td>Pseudoscience</td><td>Fake science claims (Kellogg's, Coca-Cola)</td></tr>
-<tr><td>Marketing violations</td><td>Deceptive pricing, false warranties, predatory pricing</td></tr>
-<tr><td>Sabotage</td><td>Counterproductive behavior during change</td></tr>
-<tr><td>Lying</td><td>To customers or managers</td></tr>
-</table></div>
-
-<h3>Marketing ethics violations</h3>
-<div class="call"><ul style="columns:2 220px"><li>Deceptive pricing</li><li>Psycho-discounts</li><li>Overstating features</li><li>Selling returned or old products as new</li><li>Predatory pricing</li><li>Monopoly creation</li><li>Bribery</li><li>False warranties</li></ul></div>
-</section>
-
-<section id="p4">
-<h2>CSR: concept and evolution</h2>
-<div class="call" style="margin-top:14px"><b>Definition.</b> CSR is a voluntary commitment to address social, environmental and ethical issues beyond legal obligations.</div>
-
-<h3>Key elements</h3>
-<div class="card"><ol><li>Social initiatives (philanthropy, community)</li><li>Environmental stewardship</li><li>Ethical business practices</li><li>Stakeholder engagement</li></ol></div>
-
+<h3>What is knowledge?</h3>
 <div class="two">
-<div><h3>Evolution timeline</h3>
+<div class="card"><h4>Implicit knowledge</h4><p>Practical skills and hands-on know-how gained through experience.</p></div>
+<div class="card"><h4>Explicit knowledge</h4><p>Theoretical understanding learnt through books or formal study.</p></div>
+</div>
+
+<h3>The evolution of knowledge</h3>
 <ol class="tl">
-<li><b>19th century</b>Early philanthropy (Carnegie, Rockefeller)</li>
-<li><b>Early 20th century</b>Labor movements, worker rights</li>
-<li><b>Post-WWII</b>Multinational power, academic interest</li>
-<li><b>1960s–70s</b>Ethical awareness, scandals</li>
-<li><b>1980s–90s</b>CSR as a distinct practice, stakeholder theory</li>
-<li><b>2000s+</b>Sustainability, climate change</li>
-<li><b>Present</b>Technology, data privacy, AI ethics</li>
-</ol></div>
-<div><h3>Shift: obligation to strategy</h3>
+<li><b>Curiosity</b><p>The human pursuit to unravel the mysteries of the universe and the processes happening in nature.</p></li>
+<li><b>Observation</b><p>Watching and noting natural phenomena. Before modern science, unexplained events were often attributed to supernatural powers.</p></li>
+<li><b>Trial &amp; error</b><p>Creating tools and devices by testing cause-and-effect relationships, including accidental discoveries and inventions.</p></li>
+<li><b>Systematic research</b><p>A creative, accumulative, and systematic process designed to produce reliable knowledge.</p></li>
+</ol>
+
+<h3>Science and research</h3>
+<div class="two">
+<div class="card"><h4>Science</h4><p>A systematic and creative process that builds and organizes knowledge in the form of explanations and predictions about the universe.</p></div>
+<div class="card"><h4>Research</h4><p>A set of logical, systematic, creative, and well-documented processes undertaken with a clear purpose — to build, organize, and expand knowledge.</p></div>
+</div>
+
+<div class="call" style="margin-top:18px">
+<b>Key definition.</b> Research is a <b>creative, accumulative, and systematic</b> process in order to create <b>reliable knowledge</b>.
+</div>
+
+<h3>Basic vs. applied research</h3>
 <div class="tw"><table>
-<tr><th>Traditional</th><th>Modern</th></tr>
-<tr><td>"Do good to look good"</td><td>Strategic alignment with business goals</td></tr>
-<tr><td>Fixed annual budget</td><td>Long-term relationships</td></tr>
-<tr><td>Spread across many organizations</td><td>Focused partnerships</td></tr>
-<tr><td>Avoid controversial issues</td><td>Address core business issues</td></tr>
-</table></div></div>
+<tr><th></th><th>Basic (Pure)</th><th>Applied</th></tr>
+<tr><td><b>Purpose</b></td><td>Expand theoretical understanding and produce universal principles of significance to society in general.</td><td>Solve a specific, real-world problem; findings of direct value to managers and practice.</td></tr>
+<tr><td><b>Context</b></td><td>University-based; researcher-chosen topic and objectives; flexible timescales.</td><td>Commissioned by organisations; tight timescales; directed toward immediate solutions.</td></tr>
+</table></div>
+
+<div class="call">
+"Research is to see what everybody else has seen and to think what nobody else has thought." — Albert Szent-Györgyi
+</div>
+
+<h3>Why we conduct research</h3>
+<div class="card">
+<p style="margin:0">Learning is endless and knowledge is limitless. Research builds a body of knowledge that is continually refined as beliefs are rejected or confirmed on the basis of <b>testing empirical evidence</b>.</p>
 </div>
 </section>
 
+<!-- ============ SECTION 2: KUHN CYCLE ============ -->
+<section id="p2">
+<h2>Thomas Kuhn's Cycle</h2>
+<p class="lede">How scientific frameworks form, stabilise, encounter crisis, and revolutionise.</p>
+
+<ol class="tl">
+<li><b>Pre-science</b><p>Research begins with broad exploration and observation, where no unified model guides inquiry. Different researchers may interpret phenomena using competing assumptions.</p></li>
+<li><b>Normal Science</b><p>Researchers work within an accepted framework to develop and refine knowledge, focusing on solving smaller puzzles inside the established rules rather than questioning the foundational model itself.</p></li>
+<li><b>Model Drift &amp; Crisis</b><p>As inconsistencies and anomalies emerge that the existing model cannot satisfactorily explain, the validity of the current paradigm is tested — leading to model drift and potential scientific crisis.</p></li>
+<li><b>Model Revolution &amp; Paradigm Change</b><p>Once a new candidate model is validated and explains the anomalies, it replaces the old paradigm. This newly validated knowledge becomes the foundation for the next era of normal science.</p></li>
+</ol>
+
+<h3>The four knowledge-creation steps</h3>
+<div class="flow">
+<span>Exploration</span><span class="arr">→</span><span>Establishment</span><span class="arr">→</span><span>Evaluation</span><span class="arr">→</span><span>Evolution</span>
+</div>
+</section>
+
+<!-- ============ SECTION 3: PARADIGMS ============ -->
+<section id="p3">
+<h2>Research Philosophy &amp; Paradigms</h2>
+<p class="lede">The beliefs and assumptions about how knowledge is developed and how data should be gathered, analysed, and used.</p>
+
+<h3>The five dimensions</h3>
+<div class="tw"><table>
+<tr><th>Dimension</th><th>Question it answers</th></tr>
+<tr><td>Ontology</td><td>What is the nature of reality?</td></tr>
+<tr><td>Epistemology</td><td>What is the relationship between the researcher and the researched?</td></tr>
+<tr><td>Axiology</td><td>What is the role of values and ethics in research?</td></tr>
+<tr><td>Methodology</td><td>What is the process of research?</td></tr>
+<tr><td>Methods</td><td>What type of research is used?</td></tr>
+</table></div>
+
+<h3>Three paradigms compared</h3>
+<div class="tw"><table>
+<tr><th>Dimension</th><th>Positivism</th><th>Interpretivism</th><th>Pragmatism</th></tr>
+<tr><td>Ontology</td><td>Realism — reality is external, singular, and objective.</td><td>Nominalism / Constructivism — reality is multiple and socially constructed.</td><td>Relative realism — there is no abstract way of determining the single "right" or "true" way to describe the world.</td></tr>
+<tr><td>Epistemology</td><td>Researcher is independent from the researched.</td><td>Researcher and researched actively interact.</td><td>Post-positivism — researcher can remain independent and also interact with the researched.</td></tr>
+<tr><td>Axiology</td><td>Objective — researcher is value-free and neutral.</td><td>Subjective — research is value-laden; researcher values shape inquiry.</td><td>Flexible — guided by the researcher's doubts, beliefs, and practical consequences.</td></tr>
+<tr><td>Methodology</td><td>Deductive — testing theory from data; general to specific.</td><td>Inductive — building theory from data; specific to general.</td><td>Abductive — iterative interaction between specific and general to build or modify theory.</td></tr>
+<tr><td>Methods</td><td>Quantitative — descriptive/analytical and experimental.</td><td>Qualitative — ethnography, case study, grounded theory, action research, historical research.</td><td>Mixed methods — qualitative + quantitative / triangulation.</td></tr>
+</table></div>
+
+<div class="call">
+<b>Pragmatism</b> is the "third paradigm" — it values using all available tools to understand a research problem, rather than committing to one philosophical stance.
+</div>
+</section>
+
+<!-- ============ SECTION 4: REASONING & QUALITATIVE DESIGNS ============ -->
+<section id="p4">
+<h2>Reasoning &amp; Qualitative Designs</h2>
+<p class="lede">How inference connects theory and empirical data, alongside the six core qualitative methodologies.</p>
+
+<h3>Three types of reasoning</h3>
+<div class="two">
+<div class="card">
+<h4>Deductive</h4>
+<p><b>Theory → Data.</b> Starts with an established theory or hypothesis and collects data to test it — moving from the general to the specific. Characteristic of Positivism and quantitative designs.</p>
+</div>
+<div class="card">
+<h4>Inductive</h4>
+<p><b>Data → Theory.</b> Begins with specific observations and patterns in empirical data to generate new concepts or theories — moving from the specific to the general. Characteristic of Interpretivism and qualitative research.</p>
+</div>
+<div class="card">
+<h4>Abductive</h4>
+<p><b>Theory ↔ Data.</b> The "logic of discovery." Begins with incomplete observations and forms the most likely explanation, moving iteratively between theory and data. Ideal for mixed methods.</p>
+</div>
+</div>
+
+<h3>Qualitative research designs</h3>
+<details><summary>Ethnography</summary><div>Immersive study of cultural groups, shared norms, language, and behaviours in natural settings over a sustained period. The researcher is typically an observer or participant observer.</div></details>
+<details><summary>Phenomenology</summary><div>Study of phenomena as lived experiences — concerned with the perception of reality from the perspective of the individual.</div></details>
+<details><summary>Action Research</summary><div>A collaborative, cyclical approach where researchers and participants work together to identify problems, implement solutions, and evaluate outcomes in cycles of improvement.</div></details>
+<details><summary>Case Study</summary><div>In-depth, contextual investigation of a bounded system — a person, institution, organisation, or country — used to shed light on a phenomenon within its context.</div></details>
+<details><summary>Grounded Theory</summary><div>Systematic inductive generation of an explanatory theory grounded directly in empirical data through constant comparison and theoretical sampling procedures.</div></details>
+<details><summary>Historical Research</summary><div>Critical examination and interpretation of archival records and past events to understand change over time and learn what solutions have been used.</div></details>
+
+<h3>Methodology quick reference</h3>
+<div class="tw"><table>
+<tr><th>Paradigm</th><th>Primary methodology</th><th>Examples</th></tr>
+<tr><td>Positivism</td><td>Quantitative</td><td>Ecological, cross-sectional, case-control, cohort, true experimental, quasi-experimental</td></tr>
+<tr><td>Interpretivism</td><td>Qualitative</td><td>Ethnography, case study, grounded theory, action research, historical research</td></tr>
+<tr><td>Pragmatism</td><td>Mixed methods</td><td>Triangulation, convergent parallel, sequential explanatory, sequential exploratory, embedded</td></tr>
+</table></div>
+</section>
+
+<!-- ============ SECTION 5: MIXED METHODS ============ -->
 <section id="p5">
-<h2>Six corporate social initiatives</h2>
-<p class="lede">Exams love asking you to tell these apart. The key distinction is in the first table.</p>
+<h2>Mixed Methods Research</h2>
+<p class="lede">Combining quantitative breadth and qualitative depth for a more complete picture.</p>
+
+<div class="call">
+<b>Definition.</b> Mixed methods research uses quantitative (QUAN) and qualitative (QUAL) approaches across questions, methods, data collection, analysis, and inferences in a single study. It is not merely combining numbers and narratives — it is a methodological orientation associated with pragmatism.
+</div>
+
+<h3>Purposes</h3>
 <div class="tw"><table>
-<tr><th>Initiative</th><th>Description</th><th>Key distinction</th></tr>
-<tr><td>1. Cause promotions</td><td>Funds or resources to increase awareness</td><td>Promotional focus, not tied to sales</td></tr>
-<tr><td>2. Cause-related marketing</td><td>Percentage of revenue to a cause, based on sales</td><td>Tied to product sales</td></tr>
-<tr><td>3. Corporate social marketing</td><td>Behavior change campaigns</td><td>Focus on behavior change</td></tr>
-<tr><td>4. Corporate philanthropy</td><td>Direct contributions (cash, grants, in-kind)</td><td>Most traditional</td></tr>
-<tr><td>5. Community volunteering</td><td>Employees volunteer time</td><td>Personal involvement</td></tr>
-<tr><td>6. Socially responsible business practices</td><td>Discretionary practices supporting causes</td><td>Internal operations focus</td></tr>
+<tr><th>Purpose</th><th>Description</th></tr>
+<tr><td>Exploring (Discovery)</td><td>Generating refined hypotheses through initial qualitative exploration that informs subsequent instrument development and quantitative testing.</td></tr>
+<tr><td>Explaining</td><td>Illuminating quantitative results with qualitative follow-up to uncover causal mechanisms behind statistical relationships.</td></tr>
+<tr><td>Completing missing</td><td>Achieving comprehensive understanding by integrating statistical patterns with rich narrative insights from participant interviews and open-ended responses.</td></tr>
 </table></div>
 
-<div style="margin-top:24px">
-<article class="card ini"><h3>1. Cause promotions</h3>
-<p><span class="lbl">What:</span> funds or in-kind contributions to increase awareness. Persuasive communications, awareness building.</p>
-<p><span class="lbl">Examples:</span> Body Shop animal testing ban, Ramadan charity campaigns.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>Brand positioning, customer loyalty, partnerships</div><div class="con"><b>Concerns</b>Visibility can get lost; hard to track ROI</div></div></article>
+<h3>Four core designs</h3>
+<details><summary>Convergent Parallel Design</summary><div>Quantitative and qualitative data are collected <b>simultaneously</b>, analysed separately, then merged to compare results. Used for <b>triangulation</b> — comparing different evidence types to enhance credibility and depth. <i>Example: Likert-scale surveys alongside in-depth interviews on nurse job satisfaction.</i></div></details>
+<details><summary>Explanatory Sequential Design</summary><div>Quantitative data are collected and analysed <b>first</b>; qualitative data follow <b>second</b> to explain or elaborate on the quantitative results. <i>Example: A survey shows an ethnic group underperforms academically; follow-up interviews explore cultural, social, or institutional factors.</i></div></details>
+<details><summary>Exploratory Sequential Design</summary><div>Qualitative data are collected and analysed <b>first</b> to explore an under-studied phenomenon; quantitative testing follows <b>second</b> to measure prevalence or generalise findings. <i>Example: Interviews about community perceptions of climate change inform a questionnaire for a larger population.</i></div></details>
+<details><summary>Embedded Design</summary><div>One type of data (qualitative or quantitative) is embedded within a broader framework guided predominantly by the other. The embedded method plays a secondary, supportive role. <i>Example: A large quantitative study of a smoking-cessation programme embeds qualitative interviews with a small subgroup.</i></div></details>
 
-<article class="card ini"><h3>2. Cause-related marketing (CRM)</h3>
-<p><span class="lbl">What:</span> contribution tied to product sales. Mutually beneficial: funds for the charity, sales for the company.</p>
-<p><span class="lbl">Examples:</span> WaMoola For Schools, RED Sony laptop.</p>
-<p><span class="lbl">Types:</span> specified amount per product, percentage of sales, matching contributions.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>New customers, increased sales, brand identity</div><div class="con"><b>Concerns</b>Contract complexity, consumer skepticism, tracking systems</div></div></article>
-
-<article class="card ini"><h3>3. Corporate social marketing</h3>
-<p><span class="lbl">What:</span> behavior change campaigns (health, safety, environment). Focus on changing individual behavior.</p>
-<p><span class="lbl">Examples:</span> tobacco prevention, Subway healthy eating, litter prevention.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>Brand positioning, profitability through cost reduction</div><div class="con"><b>Concerns</b>Consumer skepticism, requires expertise, slow results</div></div></article>
-
-<article class="card ini"><h3>4. Corporate philanthropy <span class="tag">Most traditional</span></h3>
-<p><span class="lbl">What:</span> direct contributions: cash, grants, scholarships, products, services.</p>
-<p><span class="lbl">Examples:</span> United Way, YMCA, disaster relief.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>Reputation, community goodwill, brand position</div><div class="con"><b>Concerns</b>Less visibility, measurement challenges</div></div></article>
-
-<article class="card ini"><h3>5. Community volunteering</h3>
-<p><span class="lbl">What:</span> employees donate time and talents.</p>
-<p><span class="lbl">Types:</span> community projects, health and safety, environmental.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>Community relationships, employee satisfaction, corporate image</div><div class="con"><b>Concerns</b>Expensive, dispersed impact, tracking difficulty</div></div></article>
-
-<article class="card ini"><h3>6. Socially responsible business practices</h3>
-<p><span class="lbl">What:</span> discretionary practices and investments supporting social causes. Not mandated by law; internal operations focus.</p>
-<p><span class="lbl">Examples:</span> environmental design, ethical sourcing, employee well-being.</p>
-<div class="pc"><div class="pro"><b>Benefits</b>Cost reduction, brand preference, employee satisfaction</div><div class="con"><b>Concerns</b>Skepticism about motives, long-term commitment questions</div></div></article>
-</div>
-</section>
-
-<section id="p6">
-<h2>CSR benefits and challenges</h2>
-<h3>Benefits of CSR</h3>
+<h3>Key challenges</h3>
 <div class="tw"><table>
-<tr><th>Category</th><th>Benefits</th></tr>
-<tr><td>Reputation</td><td>Enhanced brand, positive image</td></tr>
-<tr><td>Talent</td><td>Attract and retain top employees</td></tr>
-<tr><td>Customers</td><td>Increased loyalty, trust</td></tr>
-<tr><td>Risk</td><td>Mitigate legal and ethical risks</td></tr>
-<tr><td>Financial</td><td>Increased sales, market share</td></tr>
-<tr><td>Operations</td><td>Decreased costs (green operations)</td></tr>
-<tr><td>Investors</td><td>Increased appeal, stock value</td></tr>
-</table></div>
-<div class="two">
-<div class="card" style="margin-top:22px"><h3 style="margin-top:0">Major challenges</h3>
-<ol><li><b>Choosing the social issue:</b> fit with the business, stakeholder opinions</li><li><b>Selecting the initiative:</b> visibility, cost, alignment</li><li><b>Measurement:</b> ROI is difficult to track</li><li><b>Resource allocation:</b> balance profit vs. CSR</li><li><b>Maintaining consistency:</b> avoid superficial efforts</li></ol></div>
-<div class="card" style="margin-top:22px"><h3 style="margin-top:0">Keys to success</h3>
-<ol><li>Choose a few issues with synergy to the mission</li><li>Focus on issues relevant to the communities where you operate</li><li>Support them long-term</li><li>Form cross-functional teams</li><li>Get senior management buy-in</li><li>Establish clear, measurable goals</li><li>Develop communication plans</li></ol></div>
-</div>
-</section>
-
-<section id="p7">
-<h2>Case examples</h2>
-<div class="two">
-<div><h3>Unethical cases</h3><div class="tw bad"><table>
-<tr><th>Case</th><th>Issue</th></tr>
-<tr><td>Supplier in Cairo</td><td>Deceived a wholesaler with a new brand name</td></tr>
-<tr><td>Online business</td><td>False discount (200 + 50 = 250, claimed 300 → 250)</td></tr>
-<tr><td>Kellogg's</td><td>False claim about attentiveness improvement</td></tr>
-<tr><td>Coca-Cola</td><td>"New Coke" taste test manipulation</td></tr>
-<tr><td>Sugar ads</td><td>False health claims</td></tr>
-</table></div></div>
-<div><h3>Ethical CSR examples</h3><div class="tw"><table>
-<tr><th>Company</th><th>Initiative</th></tr>
-<tr><td>Cisco</td><td>Energy conservation (saves $4.5M/year)</td></tr>
-<tr><td>Body Shop</td><td>Against animal testing</td></tr>
-<tr><td>Unilever</td><td>Sustainable Living Plan</td></tr>
-<tr><td>McDonald's</td><td>Phased out supersize portions</td></tr>
-<tr><td>Starbucks</td><td>Sustainable coffee sourcing</td></tr>
-<tr><td>Chiquita</td><td>Reduced chemical use, saved millions</td></tr>
-</table></div></div>
-</div>
-</section>
-
-<section id="ref">
-<h2>Quick reference: key terms</h2>
-<div class="tw" style="margin-top:14px"><table>
-<tr><th>Term</th><th>Definition</th></tr>
-<tr><td>Stakeholders</td><td>Customers, government, employees, society, environment</td></tr>
-<tr><td>Triple bottom line</td><td>People, planet, profit</td></tr>
-<tr><td>Sustainability</td><td>Meeting present needs without compromising the future</td></tr>
-<tr><td>Greenwashing</td><td>False claims of environmental responsibility</td></tr>
-<tr><td>Cause marketing</td><td>Marketing tied to a social cause</td></tr>
-<tr><td>Strategic CSR</td><td>CSR aligned with business objectives</td></tr>
-<tr><td>Stakeholder theory</td><td>Business is responsible to a broader range of stakeholders</td></tr>
+<tr><th>Challenge</th><th>What it involves</th></tr>
+<tr><td>Integration difficulties</td><td>Meaningfully combining qualitative and quantitative data — often resulting in parallel rather than integrated analyses ("data silos").</td></tr>
+<tr><td>Resource intensiveness</td><td>Requires substantial time, funding, and expertise across multiple methodological traditions.</td></tr>
+<tr><td>Paradigmatic tensions</td><td>Reconciling positivism and interpretivism with fundamentally different ontological and epistemological assumptions.</td></tr>
+<tr><td>Divergent or conflicting results</td><td>When findings contradict, researchers need interpretive frameworks to address discrepancies rather than overemphasising one set of results.</td></tr>
 </table></div>
 
-<h3>Exam tips</h3>
-<div class="card"><ol class="tips">
-<li><b>Know the theories.</b> Be able to apply utilitarianism, deontology and virtue theory to scenarios.</li>
-<li><b>Distinguish initiatives.</b> Cause promotion vs. CRM vs. social marketing.</li>
-<li><b>Remember examples.</b> Match companies to their CSR initiatives.</li>
-<li><b>Benefits vs. concerns.</b> Be able to list both for each initiative.</li>
-<li><b>Evolution.</b> Understand the shift from obligation to strategy.</li>
-<li><b>Case application.</b> Practice analyzing ethical dilemmas with the frameworks.</li>
-</ol></div>
+<h3>Mitigating the challenges</h3>
+<ul>
+<li><b>Enhanced education</b> — graduate-level training in integration techniques and philosophical foundations.</li>
+<li><b>Robust planning</b> — detailed integration protocols before data collection begins.</li>
+<li><b>Collaborative teams</b> — complementary methodological expertise across traditions.</li>
+</ul>
 </section>
 
+<!-- ============ SELF-TEST ============ -->
 <section id="test">
 <h2>Self-test</h2>
 <p class="lede">Answer in your head first, then open the card.</p>
-<details><summary>How do cause promotion and cause-related marketing differ?</summary><div>Cause promotion builds awareness and isn't tied to sales. Cause-related marketing gives a percentage or set amount per sale, so the charity and the company both benefit.</div></details>
-<details><summary>Name one strength and one weakness of utilitarianism.</summary><div>Strength: it's common in business and considers everyone affected. Weakness: it can't predict the future and ignores justice and individual rights.</div></details>
-<details><summary>Kant or Aristotle: who focuses on duty, and who on character?</summary><div>Kant's deontology is duty-based: the act matters, not the outcome. Aristotle's virtue theory focuses on character and a flourishing life.</div></details>
-<details><summary>How do ethics differ from morals?</summary><div>Ethics are guiding principles shaped by profession or organization and tied to work, and they're more uniform. Morals are shaped by society, culture and religion, and vary across cultures.</div></details>
-<details><summary>What is the shift in CSR from "obligation" to "strategy"?</summary><div>From "do good to look good" with a fixed budget spread across many organizations, to alignment with business goals, long-term relationships, focused partnerships and core business issues.</div></details>
-<details><summary>Which initiative is the most traditional, and which focuses on behavior change?</summary><div>Corporate philanthropy is the most traditional. Corporate social marketing targets behavior change.</div></details>
-<details><summary>What are the three ways to commit to ethics?</summary><div>Comply with laws, fulfill promises and agreements, and be transparent by disclosing problems.</div></details>
-<details><summary>Define triple bottom line and greenwashing.</summary><div>Triple bottom line: people, planet, profit. Greenwashing: false claims of environmental responsibility.</div></details>
+<details><summary>What is the difference between implicit and explicit knowledge?</summary><div>Implicit knowledge is practical, experiential know-how — skills applied in action. Explicit knowledge is codified, theoretical understanding learnt through books or formal study.</div></details>
+<details><summary>What are the four stages of Kuhn's cycle?</summary><div>Pre-science → Normal Science → Model Drift &amp; Crisis → Model Revolution &amp; Paradigm Change.</div></details>
+<details><summary>Which paradigm pairs with deductive reasoning, and which with inductive?</summary><div>Positivism pairs with deductive reasoning (theory → data; general to specific). Interpretivism pairs with inductive reasoning (data → theory; specific to general).</div></details>
+<details><summary>What is abductive reasoning, and why does it suit mixed methods?</summary><div>Abduction is the "logic of discovery" — it moves iteratively between theory and data, forming the most likely explanation from incomplete observations. It suits mixed methods because it stays open to surprising data and lets theories be revised rather than rigidly confirmed.</div></details>
+<details><summary>Name the four core mixed methods designs.</summary><div>Convergent Parallel, Explanatory Sequential, Exploratory Sequential, and Embedded Design.</div></details>
+<details><summary>What is the main purpose of a Convergent Parallel Design?</summary><div>Data triangulation — collecting quantitative and qualitative data simultaneously, analysing them separately, and merging results to see whether they confirm or complement each other.</div></details>
+<details><summary>What causes paradigmatic tensions in mixed methods research?</summary><div>Reconciling positivism (singular objective reality, researcher independence) with interpretivism (multiple constructed realities, researcher interaction) — fundamentally different ontological and epistemological assumptions.</div></details>
+<details><summary>What is the difference between basic and applied research?</summary><div>Basic (pure) research expands fundamental theoretical understanding and produces universal principles. Applied research uses theories and methods to solve specific, real-world problems with direct value to managers and practice.</div></details>
 </section>
 
 </main>
 </div><!-- /#guide -->
 
-<!-- ============ QUIZ VIEW (separate page) ============ -->
+<!-- ============ QUIZ VIEW ============ -->
 <div id="quiz" hidden>
   <div class="quiz-top">
     <button class="btn ghost sm" id="backBtn" type="button" aria-label="Back to study guide">← Back</button>
@@ -586,7 +426,7 @@ details div{padding:12px 20px 14px 42px}
 
   <div class="quiz-wrap">
     <h2>MCQ practice test</h2>
-    <p class="lede">100 exam-style questions drawn from every section. Pick your chapters, then work through at your own pace — you can reveal the answer to any question as you go.</p>
+    <p class="lede">50 exam-style questions drawn from every section. Pick your chapters, then work through at your own pace — you can reveal the answer to any question as you go.</p>
 
     <!-- start view -->
     <div id="mcq-start">
@@ -614,7 +454,7 @@ details div{padding:12px 20px 14px 42px}
     <!-- run view -->
     <div id="mcq-run" hidden>
       <div class="mcq-meta">
-        <span id="qCounter">Question 1 of 100</span>
+        <span id="qCounter">Question 1 of 50</span>
         <span id="qChapter"></span>
       </div>
       <div class="mcq-bar"><div class="mcq-bar-fill" id="barFill"></div></div>
@@ -654,16 +494,6 @@ themeBtns.forEach(function(b){
   b.onclick=function(){root.dataset.theme=dark()?'light':'dark';label()};
 });
 label();
-
-var panels=[].slice.call(document.querySelectorAll('.panel')),tabs=document.getElementById('tabs');
-panels.forEach(function(p,i){
-  var b=document.createElement('button');
-  b.type='button';b.setAttribute('role','tab');b.textContent=p.dataset.t;
-  b.onclick=function(){show(i)};
-  tabs.appendChild(b);
-});
-function show(n){panels.forEach(function(p,i){p.hidden=i!==n;tabs.children[i].setAttribute('aria-selected',i===n)})}
-show(0);
 
 var nav=document.getElementById('nav');
 var links=[].slice.call(nav.querySelectorAll('a'));
@@ -729,132 +559,73 @@ var GuideApp=(function(){
 "use strict";
 
 var PARTS=[
-"Foundations of business ethics",
-"Ethical theories",
-"Forms of unethical behavior",
-"CSR: concept and evolution",
-"Six corporate social initiatives",
-"CSR benefits and challenges",
-"Case examples",
-"Key terms & exam tips"
+"Foundations of Science & Research",
+"Thomas Kuhn's Cycle",
+"Research Philosophy & Paradigms",
+"Reasoning & Qualitative Designs",
+"Mixed Methods Research"
 ];
 
 var QUESTIONS=[
-/* --- Part 1: Foundations --- */
-{p:0,q:"Morality is best defined as:",o:["The study of professional rules","Norms, values and beliefs embedded in social processes that define right and wrong for an individual or community","Laws enforced by government","A set of financial principles"],a:1},
-{p:0,q:"The term \u201Cethics\u201D comes from the Greek word:",o:["Logos","Ethos","Pathos","Telos"],a:1},
-{p:0,q:"Which statement correctly distinguishes ethics from morals?",o:["Ethics is influenced by society, while morals are influenced by profession","Ethics is related to professional work, while morals are not","Morals are uniform, while ethics vary by culture","Ethics is not related to professional work"],a:1},
-{p:0,q:"Which of the following is NOT a reason behind not acting ethically?",o:["Conflict between ethics and interests","Pressure from management","Strong ethical leadership","Toxic organizational culture"],a:2},
-{p:0,q:"Which of the following is a way to commit to ethics in business?",o:["Hiding product problems","Fulfilling promises and agreements","Avoiding transparency","Ignoring laws"],a:1},
-{p:0,q:"Laws are driven from:",o:["Profit and competition","Ethics and morals","Marketing strategies","Government policies only"],a:1},
-{p:0,q:"Which of the following is a source of ethics?",o:["Religion","Laws","Culture and society","All of the above"],a:3},
-{p:0,q:"Applied ethics deals with:",o:["How moral values should be determined","How a moral outcome can be achieved in a specific situation","Whether morality has objective justification","How moral capacity develops"],a:1},
-{p:0,q:"Normative ethics is concerned with:",o:["How moral values should be determined","How moral agency develops","Whether morality is objective","Specific business cases only"],a:0},
-{p:0,q:"Which of the following is true about morals?",o:["They are uniform across all cultures","They define personal character","They are always related to professional work","They are enforced by law"],a:1},
+/* --- Part 0: Foundations (10) --- */
+{p:0,q:"According to the instructional materials, science consists of two main parts: 'Content' and 'Process.' How is the 'Process' component defined?",o:["Standardized digital archiving of published literature","How we discover or improve content through observation, experiments, and step-by-step methods","The peer-review publishing pipeline in academic journals","Purely theoretical calculations without empirical observation"],a:1},
+{p:0,q:"What is the formal definition of 'Research' provided in the sources?",o:["An informal search to verify personal opinions without documentation","A set of logical, systematic, creative, and well-documented processes to build, organize, and expand reliable knowledge","Collecting participant narratives exclusively without quantitative analysis","Subjective opinion gathering for commercial marketing campaigns"],a:1},
+{p:0,q:"What is the primary purpose of Basic Research compared to Applied Research?",o:["To solve immediate practical problems in business organizations","To expand knowledge of processes and produce universal principles of significance to society in general","To meet tight commercial deadlines negotiated with an organizational sponsor","To focus strictly on localized, single-organization operational issues"],a:1},
+{p:0,q:"Which context and constraint typically characterize Basic Research?",o:["Undertaken by researchers based in universities with flexible timescales and researcher-chosen topics","Undertaken under tight timescales negotiated with corporate managers","Limited strictly to immediate operational solutions for specific companies","Guided exclusively by commercial originators rather than academic interest"],a:0},
+{p:0,q:"In contrast to basic research, Applied Research is characterized by:",o:["Flexible time scales and universal principles applicable to general society","Results that provide direct solutions to specific practical problems with findings of value to managers","Pure theoretical discovery without concern for practical application","Solely university-based settings with no organizational involvement"],a:1},
+{p:0,q:"Science is defined as a systematic and creative process that builds knowledge by forming:",o:["Untestable speculative theories","Explanations and predictions about nature and the universe based on empirical evidence","Rigid opinions that cannot be refined or revised","Unquestioned traditional beliefs passed down through generations"],a:1},
+{p:0,q:"Nobel Laureate Albert Szent-Györgyi famously described research as:",o:["'Measuring what is countable and ignoring what is qualitative'","'To see what everybody else has seen and to think what nobody else has thought'","'Collecting data until a statistical correlation emerges'","'Formulating hypotheses that can never be disproven'"],a:1},
+{p:0,q:"In the definition of research as 'a process that is undertaken in a systematic way with a clear purpose, to find things out,' which two phrases are highlighted as key?",o:["'Logical reasoning' and 'theoretical proof'","'Systematic way' and 'find things out'","'Data collection' and 'statistical analysis'","'Empirical evidence' and 'academic publication'"],a:1},
+{p:0,q:"What is the primary goal of formal scientific research?",o:["Gathering informal notes for personal curiosity","Increasing understanding of a phenomenon and communicating findings to a scientific community","Confirming pre-existing personal biases without peer evaluation","Replacing empirical testing with unverified speculation"],a:1},
+{p:0,q:"Scientific research continuously refines knowledge because beliefs are confirmed or rejected based on:",o:["Traditional authority and historical consensus","Testing empirical evidence","Subjective intuitions of individual scholars","Popular public voting"],a:1},
 
-/* --- Part 2: Ethical theories --- */
-{p:1,q:"A consequentialist ethical theory bases moral judgment on:",o:["The intention behind an action","The outcomes of an action","The character of the agent","Religious rules"],a:1},
-{p:1,q:"Utilitarianism is associated with:",o:["Kant","Aristotle","Bentham and Mill","Plato"],a:2},
-{p:1,q:"The utilitarian principle holds that an action is right if:",o:["It follows universal rules","It maximizes the overall good for the largest number of people","It benefits the decision-maker","It feels pleasurable"],a:1},
-{p:1,q:"Utilitarianism is a form of:",o:["Deontology","Virtue ethics","Consequentialism","Relativism"],a:2},
-{p:1,q:"A major weakness of utilitarianism is:",o:["It ignores consequences","It cannot predict the future and has trouble accounting for justice and individual rights","It focuses only on duties","It is based on character"],a:1},
-{p:1,q:"Egoism holds that the correct moral action is the one that:",o:["Benefits the greatest number","Meets the self-interest of individuals","Follows universal law","Maximizes pleasure for all"],a:1},
-{p:1,q:"Which is an example of egoism?",o:["A company lays off employees to protect shareholder value","A company donates to charity","A company follows environmental laws","A company volunteers in the community"],a:0},
-{p:1,q:"Hedonism is the belief that the most important principle in determining morality is:",o:["Duty","Pleasure or the absence of pain","Self-interest","Cultural norms"],a:1},
-{p:1,q:"Egotistical hedonism requires a person to consider:",o:["Only his or her own pleasure","Pleasure for all people","Duty to others","Universal rules"],a:0},
-{p:1,q:"Deontology is also known as:",o:["Consequentialist theory","Rules and duty-based ethical theory","Virtue theory","Relativist theory"],a:1},
-{p:1,q:"Deontology asserts that the morality of an action is determined by:",o:["Its outcomes","Adherence to moral rules and duties, regardless of consequences","The agent's character","Cultural norms"],a:1},
-{p:1,q:"The Greek word \u201Cdeon\u201D means:",o:["End","Pleasure","Necessity or obligation","Character"],a:2},
-{p:1,q:"Virtue theory emphasizes:",o:["Rules and duties","Consequences of actions","The character of the individual and cultivation of moral traits","Self-interest"],a:2},
-{p:1,q:"According to Aristotle, the goal of human existence is:",o:["Maximizing pleasure","The active, rational search for excellence","Following universal rules","Achieving power"],a:1},
-{p:1,q:"Which theory asks, \u201CWhat kind of life should I live?\u201D",o:["Utilitarianism","Deontology","Virtue ethics","Egoism"],a:2},
-{p:1,q:"Ethical relativism holds that:",o:["Ethics is universal","Ethics depends on culture, society, or personal feelings","Ethics is based on outcomes","Ethics is based on duty"],a:1},
+/* --- Part 1: Kuhn Cycle (7) --- */
+{p:1,q:"According to Thomas Kuhn's theory of scientific development, what is the initial stage where no unified model guides inquiry?",o:["Normal Science","Model Drift","Pre-science","Model Crisis"],a:2},
+{p:1,q:"During the 'Normal Science' stage of the Kuhn Cycle, researchers operate by:",o:["Working in chaos without any shared framework","Working within an accepted framework to solve smaller problems that fit the existing paradigm","Actively seeking to overthrow the dominant scientific model","Abandoning all previous theories to create new ones from scratch"],a:1},
+{p:1,q:"In the Kuhn Cycle, 'Model Drift' occurs when:",o:["A new paradigm completely replaces the old one","Inconsistencies and anomalies emerge that the existing model struggles to explain","Researchers reach total global consensus on all scientific laws","No research is conducted due to lack of institutional funding"],a:1},
+{p:1,q:"What characterizes the 'Model Crisis' stage in Kuhn's framework?",o:["Stability and routine problem-solving","Conflict and chaos arising because the existing paradigm fails to explain new data and accumulating anomalies","Immediate adoption of a new paradigm without dispute","A permanent return to pre-science exploration"],a:1},
+{p:1,q:"What occurs during the 'Model Revolution' stage?",o:["Innovation where new candidate models emerge and are tested to resolve the crisis","Total cessation of all scientific investigation","Suppression of new evidence to preserve the old model","Re-establishing the original normal science framework unchanged"],a:0},
+{p:1,q:"A Paradigm Shift (Paradigm Change) is complete when:",o:["The old model is proven 100% flawless","A validated new model replaces the old paradigm and becomes the foundation for future research","Science permanently reverts to pre-science exploration","Quantitative methods are completely replaced by qualitative inquiry"],a:1},
+{p:1,q:"What are the four evolutionary steps of knowledge creation depicted in scientific development?",o:["Hypothesis, Experiment, Analysis, Publication","Exploration, Establishment, Evaluation, Evolution","Deductive, Inductive, Abductive, Triangulation","Observation, Survey, Interview, Archival"],a:1},
 
-/* --- Part 3: Unethical behavior --- */
-{p:2,q:"Hiding information to protect one's own position is an example of:",o:["Ethical behavior","Unethical behavior","Transparency","Whistleblowing"],a:1},
-{p:2,q:"Misusing power, benefits, and authority in business includes:",o:["Humiliating employees and threatening to fire them","Rewarding employees fairly","Providing training","Encouraging transparency"],a:0},
-{p:2,q:"Time theft includes:",o:["Working overtime","Excessive social media use, late arrivals, and long lunch breaks","Completing tasks early","Helping colleagues"],a:1},
-{p:2,q:"Using company resources for personal usage is an example of:",o:["Theft","Volunteering","Transparency","Ethical practice"],a:0},
-{p:2,q:"Bullying in the workplace is associated with:",o:["Supportive behavior","Aggressive behavior, threats, harassment, and verbal abuse","Team building","Ethical leadership"],a:1},
-{p:2,q:"Pseudoscience consists of claims that:",o:["Are always scientifically proven","Claim to be scientific and factual but are incompatible with the scientific method","Are based on rigorous evidence","Are legally binding"],a:1},
-{p:2,q:"Which of the following is an unethical marketing practice?",o:["Transparent pricing","Deceptive pricing","Honest warranties","Accurate product labeling"],a:1},
-{p:2,q:"Sabotage is best described as:",o:["Counterproductive behavior during change times","Ethical disagreement","Whistleblowing","Team conflict resolution"],a:0},
-{p:2,q:"Lying to customers to convince them to buy is:",o:["Ethical","Unethical","Legal","Recommended"],a:1},
-{p:2,q:"In ERP systems, ethical data management requires:",o:["Giving everyone full access","Assigning responsibilities, access, and authorities for who can preview or access data","Hiding all data","Ignoring data privacy"],a:1},
+/* --- Part 2: Paradigms (10) --- */
+{p:2,q:"How is a 'Research Philosophy' defined in the materials?",o:["A set of statistical algorithms used to calculate sample size","A system of beliefs and assumptions about the development of knowledge and how data should be gathered and analyzed","A legal contract between a researcher and funding bodies","The referencing format mandated by academic publishers"],a:1},
+{p:2,q:"In research philosophy, 'Ontology' refers to assumptions regarding:",o:["The role of values and ethics in research","The nature of reality","The relationship between the researcher and the researched","The procedural steps of data collection"],a:1},
+{p:2,q:"What is the ontological stance of the Positivist paradigm?",o:["Nominalism / Constructivism (Reality is multiple and socially constructed)","Realism (Reality is external, singular, and objective)","Relative Realism without objective facts","Anti-realism (Reality does not exist)"],a:1},
+{p:2,q:"What is the ontological stance of the Phenomenological / Interpretivist paradigm?",o:["Realism (Reality is singular and external)","Nominalism / Constructivism (Reality is multiple and constructed)","Determinism (Reality is fixed by physical laws)","Pure Objectivism"],a:1},
+{p:2,q:"What is the ontological stance of Pragmatism (the 'Third Paradigm')?",o:["Absolute Realism","Pure Nominalism","Relative Realism (there is no abstract way of determining the single 'right' or 'true' way to describe the world)","Dogmatic Positivism"],a:2},
+{p:2,q:"'Epistemology' addresses which aspect of research philosophy?",o:["The financial cost structure of research projects","The relationship between the researcher and what is being researched","Ethical guidelines for participant consent","The choice of data analysis software"],a:1},
+{p:2,q:"Epistemologically, how does Interpretivism view the relationship between the researcher and the researched?",o:["The researcher is completely independent and value-free","The researcher and the researched interact","The researcher must maintain absolute emotional detachment","The relationship is controlled via double-blind laboratory protocols"],a:1},
+{p:2,q:"'Axiology' is the branch of research philosophy concerned with:",o:["Calculating statistical confidence intervals","The role of values and ethics in research","Documenting the historical evolution of scientific tools","Determining mathematical proofs for hypotheses"],a:1},
+{p:2,q:"In terms of axiology, the Positivist researcher strives to be:",o:["Value-laden and subjective","Value-free and objective","Guided by personal political beliefs","Subjectively involved in participant experiences"],a:1},
+{p:2,q:"What is the axiological stance of Pragmatism?",o:["Value-free and detached","Rigidly subjective","Flexible, accommodating the researcher's doubts and beliefs","Axially neutral without ethical consideration"],a:2},
 
-/* --- Part 4: CSR concept & evolution --- */
-{p:3,q:"Corporate Social Responsibility (CSR) is defined as:",o:["A legal obligation to pay taxes","A voluntary commitment to address social, environmental, and ethical issues beyond legal obligations","A marketing strategy only","A government regulation"],a:1},
-{p:3,q:"Which of the following is a key element of CSR?",o:["Social initiatives","Environmental stewardship","Ethical business practices","All of the above"],a:3},
-{p:3,q:"Early philanthropy in the 19th century was associated with:",o:["Andrew Carnegie and John D. Rockefeller","Milton Friedman","Adam Smith","Karl Marx"],a:0},
-{p:3,q:"The rise of labor movements in the early 20th century prompted businesses to:",o:["Ignore worker rights","Consider their social responsibilities more seriously","Reduce wages","Increase working hours"],a:1},
-{p:3,q:"CSR became a distinct area of business practice in the:",o:["1950s","1980s and 1990s","2000s","2010s"],a:1},
-{p:3,q:"Stakeholder theory emphasizes:",o:["Only shareholder profits","Responsibility of businesses to a broader range of stakeholders","Government control","Product maximization"],a:1},
-{p:3,q:"In the 21st century, CSR became increasingly intertwined with:",o:["Sustainability efforts","Tax evasion","Monopoly creation","Labor exploitation"],a:0},
-{p:3,q:"The traditional approach to CSR was described as:",o:["Strategic alignment","\u201CDoing good to look good\u201D","Long-term partnerships","Core business integration"],a:1},
-{p:3,q:"The modern approach to CSR emphasizes:",o:["Ad hoc charity","Strategic alignment with business goals","Short-term commitments","Avoiding controversial issues"],a:1},
-{p:3,q:"The United Nations' Global Compact and the Global Reporting Initiative (GRI) provide:",o:["Marketing guidelines","Guidelines for responsible corporate behavior and reporting","Tax regulations","Product standards"],a:1},
+/* --- Part 3: Reasoning & Qualitative Designs (13) --- */
+{p:3,q:"Inductive Reasoning is characterized by moving from:",o:["General theories to specific empirical data testing","Specific observations to general theories (building theory from data)","Random guesses to mathematical proofs","Quantitative outcomes to experimental equations"],a:1},
+{p:3,q:"Deductive Reasoning is characterized by moving from:",o:["Specific data observations to general theory building","General theories to specific data testing (testing theory against data)","Qualitative interviews to ethnographic field notes","Subjective reflections to open-ended coding"],a:1},
+{p:3,q:"Abductive Reasoning is often described as the:",o:["'Logic of confirmation'","'Logic of discovery,' forming the most likely explanation from incomplete observations","'Logic of elimination'","'Logic of deduction'"],a:1},
+{p:3,q:"How does Abductive Reasoning operate during a mixed methods study?",o:["It moves strictly one-way from theory to data","It moves strictly one-way from data to theory","It moves iteratively between theory and data to build or modify theory","It relies exclusively on intuition while ignoring data"],a:2},
+{p:3,q:"Which methodology is primary under the Positivist paradigm?",o:["Qualitative research (Ethnography, Grounded Theory)","Quantitative research (Descriptive / Analytical / Experimental)","Narrative autoethnography","Unstructured qualitative interviews"],a:1},
+{p:3,q:"Which methodology is primary under the Phenomenological paradigm?",o:["Quantitative experimental designs","Qualitative research (Ethnography, Case Study, Grounded Theory, Action Research)","Randomized controlled quantitative trials","Cross-sectional econometric modeling"],a:1},
+{p:3,q:"Which methodology is primary under the Pragmatism paradigm?",o:["Pure Quantitative research only","Pure Qualitative research only","Mixed Methods research (triangulation / combining QUAL and QUAN)","Non-empirical philosophical speculation"],a:2},
+{p:3,q:"Ethnography is a qualitative design that involves:",o:["Administering large-scale standardized surveys across multiple regions","Studying an intact group in its natural context over a sustained time interval through researcher immersion","Laboratory manipulation of independent variables","Statistical modeling of historical census data"],a:1},
+{p:3,q:"Phenomenology as a qualitative design specifically focuses on:",o:["Measuring organizational financial growth","Studying the perception of reality and lived experiences from the perspective of the individual","Generating statistical generalizability across large populations","Comparing experimental groups with control groups"],a:1},
+{p:3,q:"Grounded Theory is defined as an inductive qualitative method that:",o:["Tests existing theories using Likert-scale questionnaires","Generates theory from data through constant comparison and theoretical sampling procedures","Focuses exclusively on archival historical artifacts","Measures biological responses during psychological stress"],a:1},
+{p:3,q:"A Case Study qualitative research design attempts to:",o:["Generalize statistical findings across thousands of respondents","Shed light on a phenomenon within its context by studying a single unit (person, institution, organization, country)","Eliminate context to achieve pure laboratory control","Rely strictly on quantitative regression analysis"],a:1},
+{p:3,q:"Action Research is characterized as:",o:["Passive observation of historical documents","A collaborative approach where researchers and participants work together to identify problems, implement solutions, and evaluate outcomes in cycles of improvement","A single-blind randomized quantitative trial","Basic theoretical physics research"],a:1},
+{p:3,q:"Historical Research in qualitative methodology involves:",o:["Forecasting future market trends using time-series data","Analyzing past events to uncover patterns and learn what solutions were used","Conducting real-time focus group interviews","Administering online questionnaires to current employees"],a:1},
 
-/* --- Part 5: Six initiatives --- */
-{p:4,q:"Cause promotion involves:",o:["Contributing a percentage of sales to a cause","Providing funds or in-kind contributions to increase awareness and concern about a social cause","Changing individual behavior","Making direct cash donations"],a:1},
-{p:4,q:"Cause promotion differs from cause-related marketing because:",o:["Contributions are tied to product sales","Contributions are not tied to company sales of specified products","It focuses on behavior change","It is illegal"],a:1},
-{p:4,q:"Which is an example of cause promotion?",o:["The Body Shop promoting a ban on animal testing","A company donating a percentage of sales","A company giving cash grants","Employees volunteering"],a:0},
-{p:4,q:"Cause-related marketing (CRM) is defined as:",o:["A corporation commits to making a contribution or donating a percentage of revenues to a specific cause based on product sales","A corporation supports behavior change campaigns","A corporation makes direct cash donations","Employees volunteer their time"],a:0},
-{p:4,q:"The key distinction of CRM is:",o:["Corporate contribution levels are dependent on consumer action","It focuses on awareness only","It is the most traditional initiative","It involves only employee volunteering"],a:0},
-{p:4,q:"Which is an example of CRM?",o:["WaMoola For Schools program","Body Shop animal testing ban","Cisco energy conservation","Employees volunteering at 57357"],a:0},
-{p:4,q:"Corporate social marketing focuses on:",o:["Awareness building","Behavior change campaigns","Direct cash donations","Employee volunteering"],a:1},
-{p:4,q:"Which is an example of corporate social marketing?",o:["Tobacco prevention campaign","A company donating cash to charity","Employees volunteering","A company sponsoring a sports event"],a:0},
-{p:4,q:"Corporate social marketing differs from cause promotion because:",o:["It focuses on behavior change rather than awareness","It is tied to product sales","It involves only cash donations","It is the most traditional initiative"],a:0},
-{p:4,q:"Corporate philanthropy is:",o:["A direct contribution by a corporation to a charity or cause","A behavior change campaign","Tied to product sales","Employee volunteering"],a:0},
-{p:4,q:"Which is the most traditional corporate social initiative?",o:["Cause promotion","Cause-related marketing","Corporate philanthropy","Community volunteering"],a:2},
-{p:4,q:"Corporate philanthropy includes:",o:["Cash grants, donations, and in-kind services","Behavior change campaigns","Product sales-based contributions","Employee volunteer programs only"],a:0},
-{p:4,q:"Community volunteering is an initiative in which:",o:["The corporation supports and encourages employees to volunteer their time","The corporation donates a percentage of sales","The corporation runs a behavior change campaign","The corporation makes direct cash donations"],a:0},
-{p:4,q:"What distinguishes community volunteering from other initiatives?",o:["It involves employees personally volunteering at local organizations","It is tied to product sales","It focuses on awareness","It is mandated by law"],a:0},
-{p:4,q:"Which is an example of community volunteering?",o:["CIB bank employees volunteering with 57357 hospital","A company donating a percentage of sales","A company running an anti-smoking campaign","A company giving cash grants"],a:0},
-{p:4,q:"Socially responsible business practices are:",o:["Discretionary business practices and investments that support social causes","Mandated by law","Tied to product sales","Employee volunteering only"],a:0},
-{p:4,q:"The key distinction of socially responsible business practices is:",o:["Focus on discretionary activities not mandated by law","Focus on external communications only","Focus on employee volunteering","Focus on cash donations"],a:0},
-{p:4,q:"Which is an example of socially responsible business practices?",o:["Cisco's energy conservation initiative","A company donating a percentage of sales","A cause promotion campaign","Employees volunteering"],a:0},
-
-/* --- Part 6: Benefits & challenges --- */
-{p:5,q:"Which is a benefit of CSR?",o:["Enhanced reputation","Increased legal penalties","Decreased customer loyalty","Higher employee turnover"],a:0},
-{p:5,q:"CSR can help attract and retain talent because:",o:["Employees seek meaningful work and organizations that align with their values","It increases salaries","It reduces working hours","It eliminates all risks"],a:0},
-{p:5,q:"A major challenge of CSR is:",o:["Measuring impact and ROI","Too much government support","Lack of stakeholder interest","Excessive profitability"],a:0},
-{p:5,q:"Which is a limitation of CSR?",o:["Resource allocation between profit-driven activities and CSR initiatives","Too many legal requirements","Lack of customer interest","Excessive employee volunteering"],a:0},
-{p:5,q:"A key to success for CSR initiatives is:",o:["Choose few issues with synergy to mission","Spread resources across many unrelated issues","Avoid senior management involvement","Focus only on short-term results"],a:0},
-{p:5,q:"Why do companies engage in CSR?",o:["Ethical and moral obligation","Reputation and brand building","Competitive advantage","All of the above"],a:3},
-{p:5,q:"Cisco Systems' energy conservation initiative is an example of:",o:["Decreased operating costs through CSR","Cause-related marketing","Corporate philanthropy","Community volunteering"],a:0},
-{p:5,q:"CSR can increase appeal to investors because:",o:["Companies less exposed to social, environmental, and ethical risks are more highly valued by the market","Investors ignore CSR","CSR reduces stock value","CSR is illegal"],a:0},
-{p:5,q:"A concern about corporate philanthropy is:",o:["Dependency and misalignment of priorities","Too much visibility","Excessive profit","Lack of resources"],a:0},
-{p:5,q:"Evaluating CSR initiatives is challenging because:",o:["The science of measuring return on investments in corporate social initiatives is very young","There is too much historic data","Companies do not care about measurement","It is illegal to measure"],a:0},
-
-/* --- Part 7: Cases --- */
-{p:6,q:"In the Cairo supplier case, the unethical behavior was:",o:["Deceiving a wholesaler by supplying the same product under a new brand name","Donating to charity","Volunteering time","Reducing prices"],a:0},
-{p:6,q:"In the online business case, the unethical practice was:",o:["False discount advertising","Honest pricing","Free shipping","Transparent disclosure"],a:0},
-{p:6,q:"Kellogg's was criticized for:",o:["False claim that Frosted Mini Wheats improved kids' attentiveness by nearly 20%","Donating to charity","Volunteering","Reducing waste"],a:0},
-{p:6,q:"Coca-Cola's \u201CNew Coke\u201D case involved:",o:["A taste test conducted by an independent research firm showing more people chose New Coke over Pepsi","A charity campaign","Employee volunteering","Environmental conservation"],a:0},
-{p:6,q:"Sugar advertisements in the 1960s claimed that:",o:["Sugar was a dieter's dream and provided quick energy","Sugar caused health problems","Sugar was illegal","Sugar was a medicine"],a:0},
-{p:6,q:"Cisco Systems' energy conservation initiative was expected to save:",o:["About $4.5 million per year in operating costs","$100,000 per year","$1 million total","Nothing"],a:0},
-{p:6,q:"The Body Shop is known for:",o:["Campaign against using animals for cosmetic testing","Selling tobacco","Manufacturing cars","Producing oil"],a:0},
-{p:6,q:"Unilever's Sustainable Living Plan included:",o:["Reducing environmental impacts and improving well-being of a billion people","Increasing plastic waste","Ignoring sustainability","Reducing employee rights"],a:0},
-
-/* --- Part 8: Key terms & exam tips --- */
-{p:7,q:"Stakeholders include:",o:["Customers, government, employees, society, and environment","Only shareholders","Only managers","Only customers"],a:0},
-{p:7,q:"The triple bottom line refers to:",o:["People, Planet, Profit","Profit, Power, Prestige","Customers, Employees, Shareholders","Ethics, Laws, Morals"],a:0},
-{p:7,q:"Sustainability means:",o:["Meeting present needs without compromising future generations","Maximizing short-term profit","Ignoring environmental impact","Reducing employee benefits"],a:0},
-{p:7,q:"Greenwashing is:",o:["False claims of environmental responsibility","Honest environmental reporting","A type of CSR","A legal requirement"],a:0},
-{p:7,q:"Strategic CSR means:",o:["CSR aligned with business objectives","CSR unrelated to business","CSR only for publicity","CSR mandated by law"],a:0},
-{p:7,q:"Stakeholder theory holds that:",o:["Business is responsible to a broader range of stakeholders","Only shareholders matter","Government should control business","Employees should be ignored"],a:0},
-{p:7,q:"Cause marketing is:",o:["Marketing tied to a social cause","Marketing unrelated to social issues","Illegal marketing","Only for nonprofits"],a:0},
-{p:7,q:"Applied ethics deals with:",o:["How a moral outcome can be achieved in a specific situation","How moral values should be determined","Whether morality has objective justification","How moral capacity develops"],a:0},
-{p:7,q:"When applying ethical theories to scenarios, you should:",o:["Apply Utilitarianism, Deontology, and Virtue Theory","Only use Utilitarianism","Ignore theories","Use only personal opinion"],a:0},
-{p:7,q:"To distinguish cause promotion from CRM and social marketing, remember:",o:["Cause promotion is not tied to sales and does not focus on behavior change","Cause promotion is tied to sales","Cause promotion focuses on behavior change","Cause promotion is the same as philanthropy"],a:0},
-{p:7,q:"A key to remembering CSR initiatives is:",o:["Match companies to their CSR initiatives","Ignore examples","Focus only on definitions","Avoid case studies"],a:0},
-{p:7,q:"The evolution of CSR shows a shift from:",o:["Obligation to strategy","Strategy to obligation","Profit to loss","Law to ethics"],a:0},
-{p:7,q:"In case application, you should practice:",o:["Analyzing ethical dilemmas using frameworks","Memorizing only definitions","Ignoring ethical theories","Focusing only on profits"],a:0},
-{p:7,q:"Which initiative is most likely managed by the marketing department?",o:["Cause-related marketing","Corporate philanthropy","Community volunteering","Socially responsible business practices"],a:0},
-{p:7,q:"Which initiative focuses on internal operations?",o:["Socially responsible business practices","Cause promotions","Cause-related marketing","Corporate social marketing"],a:0},
-{p:7,q:"Which initiative involves employees personally volunteering?",o:["Community volunteering","Cause-related marketing","Corporate philanthropy","Cause promotions"],a:0},
-{p:7,q:"Which initiative is the most traditional?",o:["Corporate philanthropy","Cause-related marketing","Corporate social marketing","Community volunteering"],a:0},
-{p:7,q:"Which initiative focuses on behavior change?",o:["Corporate social marketing","Cause promotions","Corporate philanthropy","Cause-related marketing"],a:0}
+/* --- Part 4: Mixed Methods (10) --- */
+{p:4,q:"Tashakkori & Teddlie (2003) define Mixed Methods Research as a design where:",o:["Quantitative data is converted into qualitative text only","Quantitative (QUAN) and qualitative (QUAL) approaches are used in questions, methods, data collection, analysis, and inferences","Two separate quantitative surveys are administered concurrently","Qualitative interviews replace literature reviews completely"],a:1},
+{p:4,q:"In a Convergent Parallel Design, quantitative and qualitative data are:",o:["Collected sequentially, with qualitative data collected first","Collected simultaneously, analyzed separately, and then merged to compare results","Collected sequentially, with quantitative data collected first","Integrated during collection without separate analysis"],a:1},
+{p:4,q:"A main purpose of using a Convergent Parallel Design is:",o:["Developing a survey instrument for a future quantitative study","Data triangulation—comparing different evidence types to enhance credibility and depth","Explaining unexpected statistical outliers after survey completion","Substituting for missing quantitative sample size"],a:1},
+{p:4,q:"In an Explanatory Sequential Design, how does the research process proceed?",o:["Qualitative data collection/analysis occurs first, followed by quantitative testing","Quantitative data collection/analysis occurs first, followed by qualitative data to explain or elaborate on the quantitative results","Simultaneous QUAL and QUAN collection followed by merged analysis","QUAL data embedded inside a dominant QUAN experimental trial"],a:1},
+{p:4,q:"An Exploratory Sequential Design is most appropriate when:",o:["Quantitative results need detailed qualitative explanation","Little is known about a topic, so qualitative exploration comes first to inform instrument development and quantitative testing","Numerical data is abundant and requires no exploratory phase","Qualitative and quantitative strands carry equal weight simultaneously"],a:1},
+{p:4,q:"In an Embedded Design:",o:["Both strands carry equal weight and are analyzed together","One type of data (qualitative or quantitative) is embedded within a broader framework guided predominantly by the other","Quantitative data is collected without any qualitative component","Qualitative findings are used exclusively to replace statistical testing"],a:1},
+{p:4,q:"The challenge of 'Integration Difficulties' in mixed methods research refers to:",o:["High costs of purchasing data analysis software","Meaningfully combining qualitative and quantitative data to avoid creating isolated 'data silos'","Recruiting enough participants for surveys","Translating qualitative transcripts into foreign languages"],a:1},
+{p:4,q:"What causes 'Paradigmatic Tensions' in mixed methods research?",o:["Reconciling differing paradigms (e.g., positivism and interpretivism) with fundamentally different ontological and epistemological assumptions","Software incompatibility between statistical programs","Disagreements over formatting citations in papers","Differences in word count limits between journals"],a:0},
+{p:4,q:"'Reporting and Publication Barriers' in mixed methods stem primarily from:",o:["A lack of research topics suitable for mixed methods","Journal word limits, limited reviewer expertise in mixed methods, and editor preferences for single-method studies","Federal regulations prohibiting mixed data collection","The absence of academic journals in social sciences"],a:1},
+{p:4,q:"When qualitative and quantitative findings contradict each other in an MMR study, researchers face the challenge of:",o:["Automatic rejection by ethics boards","Divergent or conflicting results, requiring interpretive frameworks to address discrepancies rather than overemphasizing one set of results","Having to discard all qualitative data immediately","Forced conversion of qualitative text into numeric codes"],a:1}
 ];
 
 /* ---------- helpers ---------- */
@@ -1076,7 +847,6 @@ function finish(){
   }
 
   function setMode(next){
-    // Toggle off when clicking the active filter
     if(mode===next){
       mode=null;
       revList.hidden=true;
